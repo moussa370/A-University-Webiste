@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/banner.png );
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px; 
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.1s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size:14px;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    color: black;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+/*          COURSES            */
+
+.courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.courses h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.courses p{
+    color: white;
+    font-size: 14px;
+    font-weight: 250;
+    padding: 10px;
+    
+}
+
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+.course-column{
+    flex-basis: 31%;
+   color: antiquewhite;
+    border-radius: 10px;
+    background: rgb(101, 101, 110);
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+ 
+.courses h3{
+    margin: 10px;
+
+}
+.course-column:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*                      campus                        */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+}
+
+
+
+/*              FACILITIES              */
+
+.fac{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.fac-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    text-align: left;
+    font-weight: 300;
+   
+}
+
+.fac-col img{
+    width: 100%;
+
+}
+
+.fac-col h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/*   TEST    */
+
+.test{
+    width: 80%;
+    margin: auto;
+    text-align: center ;
+    margin-top: 60px;
+
+}
+
+.row{
+    display: flex;
+}
+.test-col{
+    flex-basis: 31%;
+    text-align: left;
+    background: rgb(185, 174, 174);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    align-items: stretch;
+}
+
+.test-col img{
+   height: 40px;
+   border-radius: 50%;
+
+
+}
+
+.test-col p{
+    font-weight: 300;
+}
+
+.potato{
+    margin-bottom: 30px;
+}
+
+
+/* --------------------------------*/
+
+.cta{
+   margin: 100px auto;
+   width: 80%;
+   background-color: rgb(112, 109, 109);
+   border-radius: 10px;
+   
+   text-align: center;
+   padding: 100px 0;
+}
+.cta h1{
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+
+.footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
